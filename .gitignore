@@ -1,0 +1,19 @@
+# Local and secret files
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Raw private sessions
+sessions/private/
+
+# Tool caches
+__pycache__/
+.pytest_cache/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Local validation artifacts
+tmp/

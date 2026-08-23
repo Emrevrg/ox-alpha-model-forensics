@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Ox Alpha Model Forensics"
+message: "If you use this research, please cite it using the metadata in this file."
+type: dataset
+version: 1.0.0
+date-released: 2026-08-23
+abstract: "Independent model-forensics assessment of the possible identity of OpenRouter's stealth ox-alpha model."
+license: MIT
+authors:
+  - name: "Ox Alpha Model Forensics Research Team"
+keywords:
+  - artificial intelligence
+  - large language models
+  - model forensics
+  - model attribution
+  - OpenRouter
+  - GLM
