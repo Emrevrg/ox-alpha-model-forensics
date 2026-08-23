@@ -1,0 +1,53 @@
+name: Evidence submission
+description: Submit a reproducible observation relevant to the Ox Alpha attribution
+title: "[Evidence]: "
+labels:
+  - evidence
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Evidence category
+      options:
+        - Infrastructure
+        - Tokenizer fingerprint
+        - Vision or video
+        - Behavioral probe
+        - A/B comparison
+        - Counter-evidence
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: Direct observation
+      description: State what was observed before interpreting it.
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Reproduction protocol
+      description: Include model ID, route, timestamp, parameters, prompt, repeats, and controls.
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Artifacts and checksums
+      description: Link sanitized raw artifacts and provide SHA-256 checksums.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative explanations
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data safety
+      options:
+        - label: I removed credentials, personal data, and private URLs and have the right to share these artifacts.
+          required: true
